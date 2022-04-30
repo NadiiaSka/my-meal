@@ -1,14 +1,12 @@
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
-import logo from "../assets/images/logo.svg";
-
-//<img src={logo} alt="apple" className="logo" />
+import Logo from "../components/Logo";
 
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt="logo" className="logo" />
+        <Logo />
       </nav>
       <div className="container page">
         <div className="info">
