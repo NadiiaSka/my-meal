@@ -1,27 +1,48 @@
 import main from "../assets/images/main.svg";
+import styled from "styled-components";
+//import logo from "../assets/images/fresh-apple.svg";
+
+//<img src={logo} alt="apple" className="logo" />
 
 const Landing = () => {
   return (
-    <main>
-      <nav></nav>
+    <Wrapper>
+      <nav>
+        <h1>My meal app</h1>
+      </nav>
       <div className="container page">
         <div className="info">
-          <h1>
-            My <span>meal</span> app
-          </h1>
           <p>
             I'm baby raclette PBR&B lyft quinoa keytar helvetica next level
             leggings. Gochujang locavore neutra, tofu tousled jianbing everyday
-            carry. Try-hard shaman echo park leggings, fingerstache humblebrag
-            bushwick. Vape gluten-free hammock, hell of biodiesel mustache
-            kinfolk chillwave lo-fi tofu wolf.
+            carry.
           </p>
           <button className="btn btn-hero">Login/Register</button>
         </div>
-        <img src={main} alt="easy walk" className="img" />
+        <img src={main} alt="easy walk" className="img main-img" />
       </div>
-    </main>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.main`
+  nav {
+    width: var(--fluid-width);
+    max-width: var(--max-width);
+    margin: 0 auto;
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+  }
+  .page {
+    min-height: calc(100vh - var(--nav-height));
+  }
+  h1 {
+    font-weight: 700;
+  }
+  p {
+    color: var(--grey-600);
+  }
+`;
 
 export default Landing;
