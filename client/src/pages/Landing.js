@@ -1,6 +1,6 @@
 import main from "../assets/images/main.svg";
 import styled from "styled-components";
-//import logo from "../assets/images/fresh-apple.svg";
+import logo from "../assets/images/logo.svg";
 
 //<img src={logo} alt="apple" className="logo" />
 
@@ -8,7 +8,7 @@ const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <h1>My meal app</h1>
+        <img src={logo} alt="logo" className="logo" />
       </nav>
       <div className="container page">
         <div className="info">
@@ -36,6 +36,7 @@ const Wrapper = styled.main`
   }
   .page {
     min-height: calc(100vh - var(--nav-height));
+    margin-top: 5rem;
   }
   h1 {
     font-weight: 700;
