@@ -1,6 +1,7 @@
 import main from "../assets/images/main.svg";
 import Logo from "../components/Logo";
 import Wrapper from "../assets/wrappers/LandingPage";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -15,7 +16,9 @@ const Landing = () => {
             leggings. Gochujang locavore neutra, tofu tousled jianbing everyday
             carry.
           </p>
-          <button className="btn btn-hero">Login/Register</button>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
         <img src={main} alt="easy walk" className="img main-img" />
       </div>
