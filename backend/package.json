@@ -21,5 +21,8 @@
   "homepage": "https://github.com/NadiiaSka/my-meal#readme",
   "devDependencies": {
     "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0"
   }
 }
