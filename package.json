@@ -1,0 +1,25 @@
+{
+  "name": "my-meal",
+  "version": "1.0.0",
+  "description": "Checkout the website here:",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NadiiaSka/my-meal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NadiiaSka/my-meal/issues"
+  },
+  "homepage": "https://github.com/NadiiaSka/my-meal#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
