@@ -1,6 +1,8 @@
-FROM node:16-alpine
+FROM node:16.13.0-alpine3.13
 WORKDIR /app
+ENV CHOKIDAR_USEPOLLING=true
+COPY package*.json /app/
+RUN ["npm", "install"]
 COPY . /app
 EXPOSE 3000
-RUN ["npm", "ci"]
-CMD ["npm", "start"]
+ENTRYPOINT ["npm", "start"]
