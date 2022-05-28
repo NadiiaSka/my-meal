@@ -9,6 +9,5 @@ test("Login/Register button should be present on the screen", async () => {
     </BrowserRouter>
   );
   const loginButton = screen.getByText(/Login/i);
-
   expect(loginButton).toBeInTheDocument();
 });
