@@ -58,7 +58,9 @@ const AppProvider = ({ children }) => {
     clearAlert();
   };
   return (
-    <AppContext.Provider value={{ ...state, displayAlert, clearAlert }}>
+    <AppContext.Provider
+      value={{ ...state, displayAlert, clearAlert, registerUser }}
+    >
       {children}
     </AppContext.Provider>
   );

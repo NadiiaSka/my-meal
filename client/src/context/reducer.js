@@ -24,12 +24,12 @@ const reducer = (state, action) => {
     };
   }
   if (action.type === REGISTER_USER_BEGIN) {
-    return { ...state, ifLoading: true };
+    return { ...state, isLoading: true };
   }
   if (action.type === REGISTER_USER_SUCCESS) {
     return {
       ...state,
-      ifLoading: false,
+      isLoading: false,
       token: action.payload.token,
       user: action.payload.user,
       showAlert: true,
@@ -40,7 +40,7 @@ const reducer = (state, action) => {
   if (action.type === REGISTER_USER_ERROR) {
     return {
       ...state,
-      ifLoading: false,
+      isLoading: false,
       showAlert: true,
       alertType: "danger",
       alertText: action.payload.msg,
